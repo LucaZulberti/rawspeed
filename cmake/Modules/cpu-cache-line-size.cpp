@@ -23,7 +23,7 @@ int main() {
 int main() {
   size_t val = 0;
   size_t size = sizeof(val);
-  if (sysctlbyname("hw.cachelinesize", &val, &size, NULL, 0) != 0)
+  if (sysctlbyname("hw.cachelinesize", &val, &size, nullptr, 0) != 0)
     return 1;
   std::cout << val << std::endl;
   return 0;
